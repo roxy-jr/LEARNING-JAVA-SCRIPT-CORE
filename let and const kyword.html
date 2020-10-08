@@ -1,0 +1,39 @@
+<html>
+<head><title>typofoperand</title></head>
+<body bgcolor="voiletred">
+    <script>
+        function sarika(){
+            var a=70;
+            if(true){                     
+            var a=50;
+            document.write(a+"<br>")
+                  }                 // using var variables can re-assign new data to your variable
+                                       //that why here we get the output 50 50
+            document.write(a+"<br>");
+        }
+        sarika();
+                                          /*
+                                           here if we define one vsrisbke with let and other with 
+                                           var keyword it is syntax error because we want to assingn a new value to already aasinged variable */
+
+         function khusi(){
+             let b= 70;
+             if(true){
+                 let b=50;    //here let keyword provides local scope thats why output is 50 70
+                 document.write(b+"<br>");
+             }
+             document.write(b+"<br>");
+         }  
+         khusi();   
+         function aditya(){
+             const c= 90;
+             if(true){
+                 const c=60; //here usimg const keyword we can not reaasign a  new value to a variable thats why output is 60 90
+                 document.write(c+"<br>");
+             }
+             document.write(c);
+         }  
+         aditya();                                       
+    </script>
+    </body>
+    </html>
