@@ -1,0 +1,45 @@
+<html>
+<head><title>PROTOTYPE INHERITANCE</title></head>
+<body bgcolor="pINK">
+    <h1>WE ARE LOOKING PRTOTYPE INHERITANCE</h1>
+    <script>
+        function extend(child,parent){
+            child.prototype=Object.create(parent.prototype);
+            child.prototype.constructor=child;
+        }
+        var Mobile=function(){
+            this.a=10;
+        }
+        Mobile.prototype.z=30;
+        Mobile.prototype.show=function(){
+            return "super class method";
+        }
+        var Samsung=function(){
+            Mobile.call(this);
+            
+            this.b=29;
+        }
+        extend(Samsung,Mobile);
+        var Nokia=function(){
+        
+           Samsung.call(this);
+             this.c=40;
+        }
+        extend(Nokia,Mobile);
+        var m=new Mobile();
+        
+        var s=new Samsung();
+        
+        var n=new Nokia();
+        document.write("MOBILE OBJECT CAN ACCESS--->>"+"<br>");
+        document.write("A:"+ m.a+"<br>"+"B:"+ m.b+"<br>"+"C:"+ m.c+"<br>"+"Z:"+ m.z+"<br>");
+        document.write("FUNCTION:"+ m.show()+"<BR>");
+            document.write("SAMSUNG OBJECT CAN ACCESS--->>"+"<br>");
+        document.write("A:"+ s.a+"<br>"+"B:"+ s.b+"<br>"+"C:"+ s.c+"<br>"+"z:"+s.z+"<br>");
+        document.write("FUNCTION:"+ s.show()+"<BR>");
+            document.write("NOKIA OBJECT CAN ACCESS--->>"+"<br>");
+        document.write("A:"+ n.a+"<br>"+"B:"+ n.b+"<br>"+"C:"+ n.c+"<br>"+"z:"+n.z+"<br>");
+        document.write("FUNCTION:"+ n.show()+"<BR>");
+    </script>
+    </body>
+    </html>
