@@ -1,0 +1,36 @@
+<html>
+<head><title>PROTOTYPE INHERITANCE</title></head>
+<body bgcolor="purple">
+    <h1>WE ARE LOOKING method OVERRIDING</h1>
+    <script>
+        function extend(child,parent){
+            child.prototype=Object.create(parent.prototype);
+            child.prototype.constructor=child;
+        }
+        var mobile=function(){
+            var a=20;
+            let b=30; 
+            document.write(b+a +"   <<<----sum of parent class method"+"<br>");
+           
+        }
+        mobile.prototype.d=40;
+            mobile.prototype.show =function(){
+             
+                return "parent class method"
+            }
+        var samsung=function(){
+             var z=30;
+             var x=30;
+             document.write(x*z + "<<<----product of child class method"+"<br>");
+        }
+             extend(samsung,mobile);
+             samsung.prototype.show=function(){
+               
+                 return "child class method"+"<br>";
+             }
+        var m1=new mobile();
+        var s1=new samsung();
+        document.write(s1.show());
+        document.write(m1.show());
+        document.write("<br>"+"prototype member of parent class accessed by child class object "+"D= "+s1.d);
+        </script>
