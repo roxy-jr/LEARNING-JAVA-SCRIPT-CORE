@@ -1,0 +1,33 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#abcdef">
+    <h1>WE ARE LOOKING ARRAY basics</h1>
+    <script>
+        //two method to declare an array
+        //1-using array literals
+        var args=[];
+        args[0]="aditya";
+        args[1]="sarika";    // OR--->>>     var args=["aditya","sarika","anmol","saumya"]
+        args[2]="anmol";
+        args[3]="saumya";
+        args[4]='6';
+        document.write(args+"<br>");
+        document.write(args[0]+"<br>");   // all elements can accessed by their index number
+        //2-using array constructor
+        var geek=new Array();
+        geek[0]="anshika";
+        geek[1]="rashika";  //OR  var geek=new Array("anshika","rashika","ishika","vishika");
+        geek[4]='6';
+        geek[2]="ishika";   //if we write only one value in constructor array it will considered as its length not as value
+        geek[3]="vishika";   // if we want to modify the array element we can simply add a new value by declaring its in same index number
+        geek[3]="aditya";   // index 3 will modified as aditya
+        document.write(geek+"<br>");
+        var adsa=new Array(6);
+        document.write(adsa+"<br>");   // ,,,,, coz its length will considered as 6
+        document.write(adsa[0]+"<br>");     // undefined, coz 6 is its length not its value
+        var faf=geek;   // assingning the whole array in new variable
+        faf[2]="jasprit"  // and if we apply any change using that array result changes in main array
+        document.write(faf+"<br>");
+        delete faf[0];  // if we want to delete some element in the array ,we can done this using delete operator
+        document.write(faf);
+        </script>
