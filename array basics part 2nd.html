@@ -1,0 +1,34 @@
+<html>
+    <head><title>ARRAY IN JS part 2</title></head>
+    <body bgcolor="pink">
+        <h1>WE ARE LOOKING ARRAY basics part 2nd</h1>
+        <script>
+           // array length property
+        var geek=["aditya","roxy",45,"raj","sarika",67,"dhoni"];
+        document.write("the length of this array is  "+geek.length+"<br>");
+        </script>
+        <script>
+            // now we look iteration of array element
+            let args=new Array("rahul","sonam","sumit","raj",85,"rashmi");
+          //  args.length=6 
+                      document.write("the array of the array are--->>"+"<br>");
+            for(let i=0;i<args.length;i++){
+                document.write(args[i]);
+                document.write("<br>");
+            }
+        </script>
+        <h2>now we display array which input by the user --->></h2>
+        <script>
+        var len=prompt("enter the number of elements in array");
+        var userArray=new Array();  // or var userArray=[];
+        for(var i=0;i<len;i++){
+         var e=   prompt("enter the elements of array ");
+            userArray[i]=e;
+        }
+        document.write("the user array are-->>"+"<br>");
+        for(var i=0;i<len;i++){
+            document.write(userArray[i]+"<br>");
+        }
+        </script>
+        </body>
+        </html>
