@@ -1,0 +1,49 @@
+<html>
+<head><title>es 6 class</title></head>
+<body bgcolor="pINK">
+    <h1>WE ARE LOOKING class and other properties</h1>
+    <script>
+        // There are two way to use classin js i.e 1-Class declaration,2-Class expression
+        //1-class declaration
+     class adi{
+            constructor(a,b){
+                
+                this.a=a;
+                this.b=b; 
+              this.mul=function(d,e){
+                  document.write(a/b +"<br>");
+                  document.write("the multiplication is ");
+                 
+              return a*b;
+              document.write("<br>");
+              
+            };
+            }
+        }
+        let d=prompt("enter first number");
+        let e=prompt("enter second number");
+        document.write("quotient after dividing two numbers are ");
+            var v=new adi(d,e);
+            document.write(v.mul());   
+            //class expression
+            var mobile=class{
+                constructor(str1,str2){
+                   
+                    this.str1=str1;
+                    this.str2=str2;
+                    this.show=function(){
+                     document.write("<br>"+"the user name is ");
+                     document.write(str1+str2);
+                              }
+                };
+            }
+              
+                              var m=prompt("enter first name");
+                              var n=prompt("enter second name");
+                              var m1=new mobile(m,n);
+                              m1.show();
+            
+        
+        </script>
+        </body>
+        </html>
