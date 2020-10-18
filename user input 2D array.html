@@ -1,0 +1,28 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#afgrsd">
+    <h1>WE ARE LOOKING 2D ARRAY dynamically by user</h1>
+    <script>
+        // creating a 2D array
+        var rows=prompt("enter  the number of row");
+        var column=prompt("enter  the number of column");
+        var userArray= new Array(rows);
+        for(var i=0;i<rows;i++){
+            userArray[i]=new Array(column);
+        }
+        //taking input from user
+        for(var i=0;i<rows;i++){
+            for(var j=0;j<column;j++){
+         userArray[i][j] =prompt("enter the elements of array");
+            }
+        }
+        // displaying the user array
+        for(var i=0;i<rows;i++){
+            for(var j=0;j<column;j++){
+               document.write( userArray[i][j]+" ");
+            }
+            document.write("<br>");
+        }
+        </script>
+        </body>
+        </html>
