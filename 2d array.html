@@ -1,0 +1,55 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#abzzef">
+    <h1>WE ARE LOOKING 2D ARRAY basics</h1>
+    <script>
+        //three method to declare an 2D-array
+        //1-using array literals
+        var geek=[["adi",10,"yes"],["sharma",11,"no"],["jacky",24,"no"],["jasprit",17,"yes"]]; 
+          // above 2D-array has 4 rows and 3 column
+          for(let i=0;i<4;i++){
+              for(let j=0;j<3;j++){
+                  document.write([i] + [j] + geek[i][j]+ "     ");
+              }
+              document.write("<br>");
+          }
+        </script>
+        <h2>by array constructor--->></h2>
+        <script>
+             //2-using array constructor
+        var pc=new Array(["sharma",11,"no"],["jacky",24,"no"],["jasprit",17,"yes"]); 
+          // above 2D-array has 3 rows and 3 column
+          for(var i=0;i<3;i++){
+              for(var j=0;j<3;j++){
+                  document.write([i] + [j]+"  ");//for displaying array along with index no. use [i] + [j]
+              }
+              document.write("<br>");
+          }
+        
+        </script>
+        <h2>by Array empty object--->></h2>
+        <script> 
+         //2-using array constructor
+         var jv =[[],[],[]];
+         jv[0][0]="sarika";
+         jv[0][1]="aditya";
+         jv[0][2]="anmol";
+         jv[1][0]="anjali";
+         jv[1][1]="shrmaji";
+         jv[1][2]="anshika";
+         for(var i=0;i<2;i++){
+              for(var j=0;j<3;j++){
+                  document.write(jv[i][j]+"  ");//for displaying array use geek[i][j]
+              }
+              document.write("<br>");
+          }
+          if(jv[0][1]=="aditya"){
+              document.write("true");
+          }
+          else{
+                 document.write("false");
+          }
+        </script>
+    
+        </body>
+        </html>
