@@ -1,0 +1,20 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#abzzef">
+    <h1>WE ARE LOOKING diffrent array function and their works</h1>
+    <script>
+        var array1=["aditya","sarika",27,08,2017,];
+        var array2=["anmol","anjali",17,02,2020,"alankrit"];
+        var adi=array1.concat(array2); // it return a new array ,not change the original array
+        document.write(adi);
+        document.write("<br>"+ adi.length);  // concat method here used to join one array to another array or new element.
+        document.write("<br>")
+          var newgeek= array1.join("/"); // join method returns the array separated by / or , or * or + whaever we provide in its argument
+          document.write(newgeek);
+          var reverseArray= array1.reverse(); // reverse method her used to reverse the content of the array.
+          document.write("<br>");
+          document.write(reverseArray);
+          array2.toString(); // the toString method automatically calls when we writes an array and 
+                               // elements are separated by commas, bydefault it is called when we writes an array
+          document.write("<br>"+array2);
+        </script>

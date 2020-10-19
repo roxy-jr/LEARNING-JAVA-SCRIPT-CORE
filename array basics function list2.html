@@ -1,0 +1,22 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#abcdef">
+    <h1>WE ARE LOOKING diffrent array function and their works</h1>
+    <script>
+        var array1=["aditya","anmol","aditya shrma","awadesh",56,23];
+        var array2=["sarika","shewta","saumya","riya",45,"dristi"];
+        var newArray=array1.slice(1,4); //slice method return the piece of array from begin index to end-1 index.but last index is not included in the new array.
+        document.write(newArray+"<br>");
+        var newArray2=array2.slice(-3,-1);// negative index count from back and last index -1 not included in the last.
+        document.write(newArray2+"<br>"); 
+        var result=Array.isArray(["arjun",45,"am adi"]);
+        document.write(result +"<br>"); //Array.isArray function return boolean value,and checks either the passed value is array is not.
+         var sarika = array1.splice(2);// splice method deleted all elements from index 2.
+         document.write(sarika + "<br>"); 
+         array2.splice(3,1); // remove one index from index 3
+         document.write(array2+"<br>");
+         array1.splice(3,1,"adi"); //remove one element  from index 3 and replace it from "adi".
+         document.write(array1); 
+    </script>
+    </body>
+    </html>
