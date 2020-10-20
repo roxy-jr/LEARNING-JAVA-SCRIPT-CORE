@@ -1,0 +1,32 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#456789">
+    <h1>WE ARE LOOKING diffrent array function and their works</h1>
+    <script>
+        var array1=["aditya","anmol","aditya shrma","awadesh",56,23];
+        var array2=["sarika","shewta","saumya","riya",45,"dristi"];
+        document.write(array1+"<br>");
+        document.write(array1.length+"<br>");
+       array1.unshift("anish" ,34);
+        // unshift method is used to add element in the begining of the array.
+        // it changes the length of main array.
+        document.write(array1+"<br>");
+        document.write(array1.length+"<br>");
+
+    // 2- push method is usd to add extra element to the end of array.
+    // it is just opposite of unshift method.
+    document.write(array2+"<br>");
+    document.write(array2.length+"<br>");
+    array2.push("aditya",67,"roxy");
+    document.write(array2+"<br>");
+    document.write(array2.length+"<br>");
+    // 3-shift method used to remove the first element of array and return the removed element
+   var fc= array1.shift();
+    document.write(array1+"<br>");
+    document.write(fc+"<br>"); //anish, as it returns the remove element
+    var hc=array2.pop(); // this method removes the last element of array
+    document.write(array2+"<br>");
+    document.write(hc);// as it return the removed element 
+    </script>
+    </body>
+    </html>

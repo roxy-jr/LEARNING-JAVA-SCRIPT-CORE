@@ -1,0 +1,24 @@
+<html>
+<head><title>ARRAY IN JS</title></head>
+<body bgcolor="#abcdef">
+    <h1>WE ARE LOOKING diffrent array function and their works</h1>
+    <script>
+        var array1=["aditya","anmol","aditya shrma","awadesh",56,23];
+        var array2=["sarika","shewta","saumya","riya",45,"dristi"];
+        var v1=array1.indexOf("awadesh");
+        document.write(array1+"<br>");
+        document.write(v1+"<br>"); // 3 coz it is at index 3.
+        // indexOf method return the index of element in the array
+        // if element not found it return -1
+        var v2=array1.indexOf("jc");// -1 coz jc is not in array.
+        document.write(v2+"<br>");
+        array1.fill("sarika");// fill method directly change the main array
+         // all the elements of array1 will replace wit "sarika"
+         document.write(array1+"<br>");
+         array2.fill("sarika",2,4);
+         // the value of array at index 2 and 3 will replace by sarika, end index is not included.
+         document.write(array2+"<br>");
+         document.write(array1.concat.array2);
+    </script>
+    </body>
+    </html>
