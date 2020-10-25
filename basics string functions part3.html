@@ -1,0 +1,31 @@
+<html>
+<head><title>String IN JS</title></head>
+<body bgcolor="#456744">
+    <h1 align="center">we are looking string concept in java script</h1>
+    <script>
+        //indexOf() it returns the actual index of the character provided in theargument
+        var str="hi guys lets learn js advance";
+        document.write(str.indexOf("u")+"<br>"); // 4
+        // search() this method search the given string and return its index
+        document.write(str.search("y")+"<br>");//5
+        // slice(), this method returned the sliced string in to new string
+        // it takes two argument starting index and ending index.
+        // but end index is not included
+        // if negative index it is couted from last
+        var str1="abe chal hatt diwali hai";
+        var d=str1.slice(1,10); // 1 to 9
+        document.write(d+"<br>"); // be chal h
+        var e = str1.slice(-3,-1); // ha
+        document.write(e+"<br>");
+        // substring method()
+        // it is same as slice method
+        // but it can not accept negative values
+         document.write(str.substring(1,7)+"<br>"); // i guys
+         // substr()
+         //it return the part of string 
+         // it is same as slice
+         document.write(str.substr(8,4));  //lets
+         // from index 8 upto 4 character.
+    </script>
+    </body>
+    </html>
